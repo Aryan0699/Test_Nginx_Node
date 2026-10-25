@@ -1,0 +1,34 @@
+name: test_project
+
+services:
+  server1:
+    build: .
+    environment:
+      - PORT=3000
+      - SERVER_NO=1
+    ports:
+      - "3001:3000"
+
+  server2:
+    build: .
+    environment:
+      - PORT=3000
+      - SERVER_NO=2
+    ports:
+      - "3002:3000"
+  server3:
+    build: .
+    environment:
+      - PORT=3000
+      - SERVER_NO=3
+    ports:
+      - "3003:3000"
+
+  server4:
+    build: .
+    environment:
+      - PORT=3000
+      - SERVER_NO=4
+    ports:
+      - "3004:3000"
+  
